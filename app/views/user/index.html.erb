@@ -1,0 +1,10 @@
+
+모든 회원 유저:</br>
+<% @users.each do |user|%>
+<%=user.id%>번째 사용자
+아이디: <%= user.email%></br>
+내용 : <%= user.password%></br> 
+<a href = "/user/new">회원가입하기</a>
+
+<hr>
+<% end %>

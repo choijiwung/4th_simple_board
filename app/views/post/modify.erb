@@ -1,0 +1,6 @@
+<h1><%=@id%>번째 게시물 수정</h1>
+<form action = "/post/update/<%= @id%>">
+제목: <input type = "text" name="title" value="<%=@title%>"> </br>
+내용: <input type = "text" name="content" value="<%=@content%>"> </br>
+<input type = "submit" value= "수정하기">
+</form>
